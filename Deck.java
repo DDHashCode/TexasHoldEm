@@ -3,10 +3,10 @@ import java.util.Collections;
 import java.util.Stack;
 
 public class Deck {
-    private int maxCardsInDeck;
-    private int cardsInDeck;
-    private ArrayList<Card> cardDeck;
-    private Stack<Card> deckStack = new Stack<>();
+    protected int maxCardsInDeck;
+    protected int cardsInDeck;
+    protected ArrayList<Card> cardDeck = new ArrayList<>();
+    protected Stack<Card> deckStack = new Stack<>();
 
 
     public Deck() {
@@ -40,9 +40,14 @@ public class Deck {
     }
 
     public void printCardStack() {
-        for (int i = 1 ; i < deckStack.size() + 1; i++){
+        for (int i = 0 ; i < deckStack.size(); i++){
             System.out.println(deckStack.elementAt(i));
         }
+    }
+
+    public Card popCardFromDeck() {
+        this.cardsInDeck--;
+        return deckStack.pop();
     }
 
 
