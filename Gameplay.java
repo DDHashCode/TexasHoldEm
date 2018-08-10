@@ -8,6 +8,7 @@ public class Gameplay extends Deck{
         private ArrayList<Card> flopCards = new ArrayList<>();
         private ArrayList<Card> turnCards = new ArrayList<>();
         private ArrayList<Card> riverCards = new ArrayList<>();
+        private ArrayList<Card> CardsOnTable = new ArrayList<>();
 
 
     public Gameplay() {
@@ -35,14 +36,18 @@ public class Gameplay extends Deck{
             }
             //setting cards to flop - first three cards
             setFlop();
+            CardsOnTable.addAll(flopCards);
             System.out.println(flopCards.toString());
             //setting turn - another cards
             setTurn();
+            CardsOnTable.addAll(turnCards);
             System.out.println(turnCards.toString());
             //river
             setRiver();
+            CardsOnTable.addAll(riverCards);
             System.out.println(riverCards.toString());
-
+            System.out.println("************");
+            System.out.println(CardsOnTable.toString());
 
         }
 
