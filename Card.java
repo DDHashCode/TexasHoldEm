@@ -23,4 +23,14 @@ public class Card {
     public String toString() {
         return rank + " " + colour;
     }
+
+    public boolean hasSameColour(Card karta){
+        return this.colour == karta.colour;
+    }
+
+    public boolean hasSameRank(Card karta){
+        return this.rank == karta.rank;
+    }
+
+
 }

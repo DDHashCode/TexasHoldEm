@@ -49,6 +49,9 @@ public class Gameplay extends Deck{
             System.out.println("************");
             System.out.println(CardsOnTable.toString());
 
+            System.out.println("************");
+
+            FinalDeck tempDeck = new FinalDeck(CardsOnTable, players.get(0));
         }
 
         private void firstDistribution() {

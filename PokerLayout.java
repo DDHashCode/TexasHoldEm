@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
-public enum PokerLayout {
+public enum PokerLayout{
+    NONE(0),
     HIGH_CARD(1),
     PAIR(2),
     TWO_PAIRS(3),
@@ -9,7 +10,7 @@ public enum PokerLayout {
     FLUSH(6),
     FULL_HOUSE(7),
     QUADS(8),
-    STRAIGHT_FLUSH(8),
+    STRAIGHT_FLUSH(9),
     ROYAL_FLUSH(10);
 
     int number;
@@ -19,11 +20,9 @@ public enum PokerLayout {
         this.number = numer;
     }
 
-    public PokerLayout Figure(ArrayList<Card> cardsInHand, ArrayList<Card> CardsOnTable){
-
-    }
-
     public boolean isBiggerThan(PokerLayout check){
         return (this.number > check.number);
     }
+
+
 }
