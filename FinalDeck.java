@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FinalDeck {
     private ArrayList<Card> cards;
@@ -26,6 +28,7 @@ public class FinalDeck {
         System.out.println(showTwoPairs(this.cards));
         System.out.println(showFull(this.cards));
         System.out.println(showQuads(this.cards));
+        showStreigh(this.cards);
 
 
     }
@@ -258,6 +261,18 @@ public class FinalDeck {
                 break;
             }
         }
+        return outputDeck;
+    }
+
+    public ArrayList<Card> showStreigh(ArrayList<Card> cards) {
+        var tempDeck = new ArrayList<Card>(cards);
+        var outputDeck = new ArrayList<Card>();
+
+
+
+        System.out.println("here");
+
+
         return outputDeck;
     }
 
