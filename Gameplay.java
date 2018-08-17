@@ -50,6 +50,12 @@ public class Gameplay extends Deck{
             System.out.println(CardsOnTable.toString());
 
             System.out.println("************");
+            CardsOnTable.removeAll(CardsOnTable);
+            CardsOnTable.add(new Card(CardRank.A, Colour.SPADE));
+            CardsOnTable.add(new Card(CardRank.A, Colour.CLUB));
+            CardsOnTable.add(new Card(CardRank.A, Colour.DIAMOND));
+            CardsOnTable.add(new Card(CardRank.A, Colour.HEART));
+            CardsOnTable.add(new Card(CardRank.J, Colour.HEART));
 
             FinalDeck tempDeck = new FinalDeck(CardsOnTable, players.get(0));
         }

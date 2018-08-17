@@ -6,7 +6,7 @@ public enum PokerLayout{
     PAIR(2),
     TWO_PAIRS(3),
     THREE(4),
-    STRAIGHT(5),
+    STREIGH(5),
     FLUSH(6),
     FULL_HOUSE(7),
     QUADS(8),
